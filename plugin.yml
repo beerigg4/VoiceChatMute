@@ -1,0 +1,28 @@
+name: VoiceChatMute
+version: 1.0.0
+main: VoiceChatMute.VoiceChatMute
+api-version: '1.20'
+description: VoiceChat Mute Plugin with LuckPerms integration
+commands:
+  voicechatmute:
+    description: Mute a player in voice chat
+    aliases: [vcmute]
+    permission: staff.vcmute
+    usage: /voicechatmute <player> <time> <reason>
+  unmutevoicechat:
+    description: Unmute a player in voice chat
+    aliases: [vcunmute]
+    permission: staff.vcmute
+    usage: /unmutevoicechat <player>
+  voicechatinfo:
+    description: View voice chat mute status
+    aliases: [vcinfo]
+    permission: staff.vcinfo
+    usage: /voicechatinfo
+permissions:
+  staff.vcmute:
+    description: Allows muting and unmuting players in voice chat
+    default: op
+  staff.vcinfo:
+    description: Allows viewing voice chat mute status
+    default: op
