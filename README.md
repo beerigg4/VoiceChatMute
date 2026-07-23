@@ -1,2 +1,0 @@
-# VoiceChatMute
-VoiceChatMute plguin mute
